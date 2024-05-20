@@ -32,11 +32,11 @@ function slideShow() {
 
   //se a posição da imagem for imagem e a quantidade de imagens no array
 
-  if (Index == imagens.lenght) {
+  if (Index == imagens.length) {
     Index = 0;
   }
   //setTimeout é uma função que executa o tempo, nesse caso vai chamar função e aplicar o time
-  setTimeout('slideshow()', time);
+  setTimeout(slideshow(), time);
 }
 //executar toda a função
 slideshow();
