@@ -11,7 +11,6 @@
   --accent-hover: black;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -32,12 +31,14 @@ body {
   background-color:transparent;
   position: fixed;
 }
+
 #logo {
   margin-left: 20px;
   margin-top: 10px;
   width: 100px;
   height: 100px;
 }
+
 #menu {
   display: flex;
   list-style: none;
@@ -91,7 +92,6 @@ section {
 #img:hover{
   animation: efeito 0.5s ease-in-out infinite;
 }
-
 
 .btn-login{
   width: 100px;
@@ -214,6 +214,7 @@ footer h5 {
   justify-content: space-around;
   z-index: 5;
 }
+
 .container form {
   display: flex;
   align-items: center;
@@ -449,7 +450,7 @@ footer h5 {
   #hamburg::before,
   #hamburg::after {
   /*determina um conteudo para o novo elemento criado*/
-  content: '';
+  content: none;
   display: block;
   /* currentColor pega a cor do elemento base*/
   background: currentColor;

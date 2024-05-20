@@ -1,18 +1,4 @@
 
-//MENU HAMBURGUER
-//DECLARANDO A VARIAVEL E PEGANDO O  ID
-const btnMobile = document.querySelector("#btnMobile");
-//FUNÇÃO MENU
-function Menu(){
-    //DECLARANDO A VARIAVEL E PEGANDO O  ID
-   const navBar = document.querySelector(".nav");
-   //RETORNA UMA LISTA ATIVA
-    navBar.classList.toggle("active");
-}
-//EVENTO QUE AO CLICAR CHAMA FUNÇÃO MENU
-btnMobile.addEventListener("clique", Menu);
-
-
 /*criando o slideShow */
 
 //declarando o objeto de imagens em um array
@@ -31,16 +17,14 @@ function slideShow() {
   Index++;
 
   //se a posição da imagem for imagem e a quantidade de imagens no array
-
   if (Index == imagens.length) {
     Index = 0;
   }
+  
   //setTimeout é uma função que executa o tempo, nesse caso vai chamar função e aplicar o time
-  setTimeout(slideshow(), time);
+  setTimeout('slideShow()', time);
 }
-//executar toda a função
-slideshow();
-
+slideShow();
 
 
 function openModal(){
@@ -51,3 +35,16 @@ function closeModal(){
     const modal=document.querySelector("#modal");
     modal.style.display ="none";
 }
+//MENU HAMBURGUER
+//DECLARANDO A VARIAVEL E PEGANDO O  ID
+const btnMobile = document.querySelector("#btnMobile");
+//FUNÇÃO MENU
+function Menu(){
+    //DECLARANDO A VARIAVEL E PEGANDO O  ID
+   const navBar = document.querySelector(".nav");
+   //RETORNA UMA LISTA ATIVA
+    navBar.classList.toggle("active");
+}
+//EVENTO QUE AO CLICAR CHAMA FUNÇÃO MENU
+btnMobile.addEventListener("click", Menu);
+
